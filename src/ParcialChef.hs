@@ -94,4 +94,4 @@ participanteEstrella :: [Participante] -> Participante
 participanteEstrella [p] = p
 participanteEstrella (p1:p2:ps)
     | esMejorQue (cocinar p1) (cocinar p2) = participanteEstrella (p1:ps)
-    | otherwise                            = participanteEstrella (p2:ps)
+    | otherwise = participanteEstrella (p2:ps)
